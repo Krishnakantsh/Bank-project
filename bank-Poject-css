@@ -1,0 +1,716 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position:sticky;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 0.8vw;
+  /* background: black; */
+  background:#A79277;
+}
+
+.logoDiv{
+  color: white;
+  margin-left: 10px;
+  border: 0.2vw solid white;
+  padding: 0.3vw 0.9vw;
+  border-radius: 5vw;
+  font-weight: 500;
+  box-shadow:inset 0.1vw 0.1vw 0.5vw white; 
+  font-size: 1.5vw;
+}
+
+.spinnerDiv{
+  display: none;
+  margin-right: 6vw;
+  color: white;
+  font-size: 7vw;
+}
+.logoDiv:hover{
+  text-shadow: 2px 2px 8px  white;
+  border: 0.2vw solid #CD5C08;
+  box-shadow:inset 0.1vw 0.1vw 0.5vw #CD5C08;
+  background: white;
+  color:#CD5C08 ;
+}
+.navList{
+  display: flex;
+  flex-direction: column;
+}
+.navList ul{
+  display: flex;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.userImg{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  height: 1.5vw;
+  width: fit-content;
+  border-radius:30px;
+  padding: 0.8vw;
+}
+.userImg h4{
+   font-size: 1.5vw;
+   color: #CD5C08;
+   margin-top: 7px;
+   margin-left: 5px;
+}
+
+.profileImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 50%;
+  margin-right: 0.5vw;
+}
+
+
+.navList ul li{
+  list-style: none;
+  font-size: 1vw;  
+  color: white;
+  margin-right:2vw;
+  cursor: pointer;
+}
+
+.navList ul li:hover{
+  text-shadow: 2px 2px 8px  white;
+}
+
+.highlighted{
+  text-shadow: 2px 2px 8px  white;
+}
+
+
+.screenSlider{
+  position: relative;
+  justify-content: center;
+  height:85vh;
+}
+
+.screenSlider::after{
+  background: linear-gradient(to right, rgba(10,10,20,1) 30%, rgba(0,0,0,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  z-index: 2;
+
+}
+
+
+.sliderImg1Div{
+  width: 100%;
+  height: 100%;
+}
+
+.TaglineDIV{
+  position: absolute;
+  top:9vw;
+  left:6vw;
+  height: fit-content;
+  width:fit-content;
+  z-index: 3;
+  padding: 1vw;
+}
+
+.TaglineDIV h1{
+  font-size: 4vw;
+  color: white;
+  text-shadow: 0.1vw 0.15vw 0.2vw white;
+}
+
+.TaglineDIV button{
+  color: #CD5C08;
+  width:fit-content;
+  padding: 1vw;
+  margin-top: 1vw;
+  border-radius: 10vw;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  font-weight: 600;
+  border: 0.2vw solid #CD5C08;
+}
+.TaglineDIV button:hover{
+  background: transparent;
+  border: 0.2vw solid white;
+}
+
+.TaglineDIV h2{
+  font-size: 3vw;
+  background: -webkit-linear-gradient(#CD5C08, #FABC3F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.loginCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  height: 20vw;
+  width: 15vw;
+  border: 5px solid white;
+  background: rgba(255,255,255,0.6);
+  top: 12vw;
+  right: 15vw;
+  border-radius: 20px;
+}
+.loginCard h1{
+  font-size: 2vw;
+  font-weight: 700;
+  color: white;
+  margin-top: 1vw;
+}
+.loginCard input{
+  width:80%;
+  height:2vw;
+  margin-top:1vw;
+  padding: 0.5vw;
+  border-radius: 20px;
+  border: none;
+  border: 0.2vw solid white;
+  background: rgba(255,255,255,0.6);
+  font-size: 1vw;
+}
+.loginCard input:focus{
+ outline: none;
+ box-shadow: 0.1vw 0.1vw 0.5vw black;
+ transform:scale(1.2);
+ color: red;
+}
+.loginCard p{
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: blue;
+  cursor: pointer;
+}
+.loginCard button{
+  width: 90%;
+  border-radius: 10px;
+  background: white;
+  border: none;
+  height: 3vw;
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e39d10;
+  border: 0.2vw solid white;
+}
+.loginCard button:hover{
+  background: transparent;
+  border: 0.2vw solid white;
+  color: white;
+}
+
+.sliderImg1Div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dotDivContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4vw;
+  border: 0.1vw solid rgb(255, 111, 0);
+  box-shadow:inset 2px 2px 5px rgb(255, 111, 0);
+  height: fit-content;
+}
+
+.dotContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 2vw;
+}
+.active{
+  background-color:rgb(255, 111, 0);
+}
+
+.dotDiv{
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  border: 0.1vw solid rgb(255, 111, 0);
+  box-shadow:inset 2px 2px 5px rgb(255, 111, 0);
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:fit-content;
+  margin-top: 0.5vw;
+  background:linear-gradient(rgba(144,155,166,0.4)40% ,rgba(190,185,136,0.4)60%  );
+}
+.servicesRo1{
+  width: 100%;
+}
+.serviceLeft{
+  border-bottom-right-radius: 15vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.digitalBan h1{
+  font-size: 5vw;
+  color: #5F6F65;
+  margin-left: 2vw  ;
+  text-shadow: 0.1vw 0.1vw 0.5vw #5F6F65;
+}
+
+.digitalBan span{
+  font-size: 6vw;
+  font-family:verdana;
+  color:#6482AD;
+  margin-top: -1.5vw;
+  margin-left: 2vw  ;
+  text-shadow: 0.1vw 0.1vw 0.5vw #6482AD;
+}
+.service1Right{
+  height: 30vw;
+}
+.service1Right img{
+  width: 99%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 2vw;
+  border-top-left-radius: 15vw;
+  border-bottom-left-radius: 3vw;
+  filter: drop-shadow(inset (0.5vw, 0.5vw ));
+}
+
+.DigiBanki_out{
+
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2vw;
+
+}
+
+.DigiBanki_in{
+
+   display: flex;
+   justify-content: space-between;
+   width: 40vw;
+   height: fit-content;
+   margin-top: 4vw;
+
+}
+
+.DigiBankiItems{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E8B86D;
+  border-radius: 10vw;
+  width: 15vw;
+  height: 3vw;
+  position: relative;
+  padding-left: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+
+}
+
+.iButtonDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 2.5vw;
+  background: white;
+  position: absolute;
+  border-radius: 10vw;
+  left: 0.2vw;
+
+}
+.iButtonDiv i {
+
+  font-size: 1.5vw;
+  color: #E8B86D;
+
+}
+
+.headingDiv {
+
+  color: green;
+  margin-top: 0.5vw;
+  font-size: 4vw;
+  font-weight: 500;
+
+}
+
+.cardContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 3vw;
+  margin-top: 1vw;
+  flex-wrap: wrap;
+  margin-bottom: 0.2vw;
+}
+
+.cardservice{
+
+   width: 250px;
+   height: 350px;
+   background:#7FA1C3;
+   margin: 2vw;
+   margin-top: 1vw;
+   border-radius: 1vw;
+
+}
+
+/* featured div  css.....................................................................................*/
+
+.featuredFlex1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: fit-content; 
+} 
+
+.HeadingD h1{
+  color: #5F6F65;
+  font-size: 8vw;
+  font-weight: 500;
+  text-shadow: 0.1vw 0.1vw 0.5vw #5F6F65;
+  margin: 5vw 1vw;
+}
+.sliderOut{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  height: fit-content; 
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+.sliderOut::-webkit-scrollbar{
+  display: none;
+}
+.slider3{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 2vw;
+}
+
+.featureCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:fit-content;
+  width: 12vw;
+  margin:0.2vw;
+  margin-left: 6vw;
+  border: none;
+
+}
+
+.featureCardImgDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vw;
+  width: 9vw;
+  border:0.5vw solid #B3C8CF;
+  border-radius: 50%;
+  margin-bottom: 1.5vw;
+}
+
+.featureCardImgDiv img{
+
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+
+}
+
+#goldL img{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+}
+#propertyL img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.featureCard button{
+  width:100%;
+  height: 3vw;
+  background: #CD5C08;
+  color: white;
+  border: none;
+  border-radius: 0.2vw;
+  font-size: 1vw;
+  font-weight: 200;
+}
+.slideIconDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  height: 3vw;
+  transform: translateY(70%);
+  padding: 1vw;
+}
+.leftSlider, .rightSlider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  border: 0.2vw solid black;
+  font-size: 1.5vw;
+
+}
+
+
+/* branch location.................................. */
+
+.SecurityMainDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background: #FFF8E8;
+  padding:3vw;
+  margin-top: 3vw;
+  position: relative;
+}
+.securityWarn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.securityWarn h1{
+   font-size: 5vw;
+   color: #6482AD;
+   text-shadow: 0.08vw 0.1vw 0.5vw #6482AD;
+   padding-left: 2vw;
+}
+
+.CyberBtn{
+  background: #CD5C08;
+  width: 20vw;
+  height: 3vw;
+  margin-top: 3vw;
+  border: none;
+  border-radius: 10vw;
+  margin-left: 20vw;
+  font-size: 2vw;
+  font-family: verdana;
+  font-weight:600;
+  color: white;
+}
+.CyberBtn:hover{
+  background: white;
+  color: #CD5C08;
+  animation: dark 10s ease-in linear infinite all;
+  border: 0.2vw solid #CD5C08 ;
+}
+.securityImagDiv{
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right:0vw;
+  top: 1vw;
+  width: 30vw;
+  height: 20vw;
+}
+.securityImagDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.branchLocation{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+.locationIndicator{
+  width: 100%;
+}
+.braLoLet{
+  margin-top: -5vw;
+  width: 40vw;
+  height: 25vw;
+  margin-left: 3vw;
+}
+#locationImg{
+  width: 50vw;
+  height: 21vw;
+}
+.braLoLet h2{
+  font-size: 5vw;
+  color: #CD5C08;
+}
+.locationIndicator{
+  display: flex;
+  margin-top: 8vw;
+}
+.braLoRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.braLoRight h2{
+  font-size: 6vw;
+  text-shadow: 0.1vw 0.1vw 0.5vw black;
+}
+.braLoRight h1{
+  font-size: 5vw;
+  color: #654520;
+  text-shadow: 0.1vw 0.1vw 0.5vw #654520;
+}
+
+
+/* open account....................................................................................... */
+.openAccRow{
+  background: #D1E9F6;
+}
+.OpenAccountDiv{
+  height: fit-content;
+  margin-top: 1vw;
+  background: white;
+  margin-bottom: 5vw;
+  border-radius: 2vw;
+}
+.openYourAc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.openYourAc h1,.openYourAc h2{
+  font-size: 5vw;
+  color: #180c02;
+}
+
+
+.footer{
+  display: grid;
+  text-align: center;
+  height: fit-content;
+  padding: 2vw;
+  background: rgb(19,168,225);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 98%;
+}
+
+.footerDiv{
+  height: fit-content;
+}
+.footerDiv1,.footerDiv2{
+  display: flex;
+  flex-direction: column;
+  align-items: start;text-align: left;
+  padding-left: 1.5vw;
+}
+.footerDiv1 h1,.footerDiv2 h1{
+  color:#FABC3F;
+  font-size: 1.5vw;
+}
+.footerDiv1 ul , .footerDiv2 ul{
+  list-style: none;
+  line-height: 1.8vw;
+  margin-top: 1vw;
+  color: white;
+  font-size: 0.8vw;
+}
+
+.footerDiv3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+}
+
+.footerDiv3 h1{
+   font-size: 2.5vw;
+}
+.footerDiv3 input{
+  width: 80%;
+  height: 3vw;
+  padding-left: 0.5vw;
+  margin-top: 0.5vw;
+  border-radius: 10vw;
+  border: none;
+}
+.footerDiv3 input:focus{
+ outline: none;
+ box-shadow: 0.1vw 0.2vw 0.3vw black;
+ color: red;
+}
+
+.connectWithUs{
+  margin-top: 9vw;
+}
+.connectWithUs h1{
+  font-size: 3vw;
+  color: #CD5C08;
+}
+
+.connectWithUs ul{
+  list-style: none;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.connectWithUs ul li img{
+  width: 2.5vw;
+  height: 2.5vw;
+  filter: drop-shadow(0.1vw 0.1vw 0.3vw white);
+}
