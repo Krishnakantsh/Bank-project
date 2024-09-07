@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/mediaQuery.css" />
+    <title>Star Life Bank Service</title>
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <div class="logoDiv">Star Life Bank</div>
+        <div class="navList">
+          <ul>
+            <li class="list-item highlighted">HOME</li>
+            <li class="list-item">ABOUT</li>
+            <li class="list-item">SERVICES</li>
+            <li class="list-item">
+              <div class="userImg">
+                <div class="profileImg">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <h4></h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="spinnerDiv"><i class="fa-solid fa-bars"></i></div>
+      </div>
+
+      <div class="container-fluid d-flex screenSlider p-0">
+        <div class="row sliderImg1Div">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1504556106489-6d450910aeb3?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+        <div class="TaglineDIV">
+          <div class="taglineInner">
+            <h2>A Banking....</h2>
+            <h1>Always bring ahead</h1>
+            <button>
+              Explore Now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- login card  -->
+        <form action="" >
+         <div class="card loginCard">
+          <h1>Login Here</h1>
+             
+            
+              <input type="text" placeholder="Enter customer id">
+              
+              <input type="password" placeholder="Enter password">
+              <p>Forget Password</p>
+              <button type="submit">Log in</button>
+           
+          </div>
+        </form>
+
+
+      </div>
+      <div class="container-fluid dotDivContainer">
+        <div class="dotContainer">
+          <div class="dotDiv active"></div>
+          <div class="dotDiv"></div>
+          <div class="dotDiv"></div>
+          <div class="dotDiv"></div>
+          <div class="dotDiv"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid services">
+        <div class="row servicesRo1">
+          <div class="col-sm-6 serviceLeft">
+            <div class="row digitalBan">
+              <h1>Digital</h1>
+              <span>Banking</span>
+            </div>
+            <div class="DigiBanki_out">
+              <div class="DigiBanki_in">
+                <div class="DigiBankiItems">
+                  <div class="iButtonDiv">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  Mobile Banking
+                </div>
+                <div class="DigiBankiItems">
+                  <div class="iButtonDiv">
+                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                  </div>
+                  Instant Loan
+                </div>
+              </div>
+              <div class="DigiBanki_in">
+                <div class="DigiBankiItems">
+                  <div class="iButtonDiv">
+                    <i class="fa-solid fa-laptop"></i>
+                  </div>
+                  NetBanking
+                </div>
+                <div class="DigiBankiItems">
+                  <div class="iButtonDiv">
+                    <i class="fa-solid fa-credit-card"></i>
+                  </div>
+                  Card Service
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 service1Right">
+            <img src="/images/cute-couple-are-inlove-each-other.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- html for open account  -->
+
+      <div class="container-fluid ">
+        <div class="row openAccRow">
+          <div class="col-lg-4 openYourAc">
+            <h1>Open Your</h1>
+            <h2>New Account</h2>
+          </div>
+          <div class="col-lg-8">
+            <div class="OpenAccountDiv">
+              <form>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="Text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="First name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="midName">Middle Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="midName"
+                        placeholder="Middle Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label for="emailid">Email Id</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailid"
+                        placeholder="Enter email id"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="phoneNo">Phone No.</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="phoneNo"
+                        placeholder="Enter phone no."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="adharNo">Adhar No.</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="adharNo"
+                        placeholder="Enter aadhar no"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="accounttype">Choose account type </label
+                      ><br />
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                        id="accounttype"
+                      >
+                        <option selected>Choose account type</option>
+                        <option value="saving">saving</option>
+                        <option value="current">current</option>
+                        <option value="saving/current">saving/current</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="file">Upload Image</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="file"
+                        placeholder="Upload image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="fatherN">Father's Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fatherN"
+                        placeholder="Enter father's name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="MotherN">Mother's Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="MotherN"
+                        placeholder="Enter mother's name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="nomineeN">Nominee</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nomineeN"
+                        placeholder="Enter nominee name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label for="password">Create password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Enter password"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label for="confirmP">Confirm password</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="confirmP"
+                        placeholder="Confirm password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 d-flex justify-content-center">
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <input
+                      type="reset"
+                      class="form-control btn btn-danger"
+                      id="confirmP"
+                      placeholder="Confirm password"
+                      value="Reset"
+                    />
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <div class="form-group">
+              
+                      <input
+                        type="submit"
+                        class="form-control btn btn-primary"
+                        id="confirmP"
+                        placeholder="Confirm password"
+                        value="Submit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid featuredFlex1">
+        <div class="HeadingD"><h1>Instant Loan Approval</h1></div>
+        <div class="sliderOut">
+          <div class="slider3">
+            <div class="card featureCard">
+              <div class="featureCardImgDiv" id="goldL">
+                <img src="/images/gold-bangle.webp" alt="" />
+              </div>
+              <button type="button">Gold Loan</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv">
+                <img
+                  src="https://canarabank.com/assets/images/product-1.png"
+                  alt=""
+                />
+              </div>
+              <button type="button">Home Loan</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv">
+                <img
+                  src="https://canarabank.com/assets/images/MSME.png"
+                  alt=""
+                />
+              </div>
+              <button type="button">MSME Loan</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1sO4PVjoOR1oc_Eo1nWFZcgGKsGQAcfNEJg&s"
+                  alt=""
+                />
+              </div>
+              <button type="button">Kisan Credit Card</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv">
+                <img
+                  src="https://canarabank.com/assets/images/product-2.webp"
+                  alt=""
+                />
+              </div>
+              <button type="button">Car Loan</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv">
+                <img
+                  src="https://canarabank.com/assets/images/product-4.png"
+                  alt=""
+                />
+              </div>
+              <button type="button">Education Loan</button>
+            </div>
+            <div class="card featureCard">
+              <div class="featureCardImgDiv" id="propertyL">
+                <img
+                  src="https://i.pinimg.com/736x/38/47/36/3847365beb7da39d34684ae14e4b7bf5.jpg"
+                  alt=""
+                />
+              </div>
+              <button type="button">Property Loan</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="slideIconDiv">
+             <div class="leftSlider"><i class="fa-solid fa-less-than"></i></div>
+             <div class="rightSlider"><i class="fa-solid fa-greater-than"></i></div>
+        </div>
+      </div>
+
+      <div class="SecurityMainDiv">
+        <div class="row securityWarn">
+          <h1>Cyber security awareness</h1>
+          <input type="button" class="CyberBtn" value="Know More" />
+          <div class="securityImagDiv">
+            <img
+              src="https://canarabank.com/assets/images/volume.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="branchLocation">
+        <div class="row locationIndicator">
+          <div class="col-6 braLoLet">
+            <img
+            id="locationImg"
+              src="https://canarabank.com/assets/images/branch.webp"
+              alt=""
+            />
+          </div>
+          <div class="col-5 braLoRight">
+            <h2>Our other</h2>
+            <h1>Branches</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-1 footer">
+          <div class="row">
+              <div class="col-sm-4 footerDiv footerDiv1 ">
+                <h1>QUICK ACCESS</h1>
+                  <ul>
+                    <li>CAREERS</li>
+                    <li>CUSTOMER EDUCATION</li>
+                    <li>CORPORATE BANKINK</li>
+                    <li>PENSIONERS PORTAL</li>
+                    <li>CALENDER</li>
+                    <li>HOLIDAY LIST</li>
+                    <li>VACANT LOCKERS</li>
+                  </ul>
+                  <h1>CUSTOMER SERVICE</h1>
+                  <ul>
+                    <li>COMPLAINTS</li>
+                    <li>DOWNLOAD CENTER</li>
+                    <li>CONSULTANCY SERVICES</li>
+                    <li>BROWSER COMPLIBILITY</li>
+                    <li>SCREEN READER ACCESSIBILITY</li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 footerDiv footerDiv2">
+                <h1>ONLINE SERVICES</h1>
+                <ul>
+                  <li>ONLINE ACCOUNT OPENING</li>
+                  <li>GST INVOICE PORTAL</li>
+                  <li>ONLINE SERVICE REQUEST</li>
+                  <li>E BIKRAY</li>
+                  <li>STAR LIFE FEE COUNTER</li>
+                  <li>INTERNATIONAL SERVICE</li>
+                  <li>INTERNATIONAL SERVICE</li>
+                </ul>
+                <h1>IMPORT LINK</h1>
+                <ul>
+                  <li>RBI KAHTA HAI</li>
+                  <li>RBI MONETARY MUSEUM</li>
+                  <li>E-VOTING</li>
+                  <li>PRADHAN MANTRI JAN DHAN YOJNA</li>
+                  <li>PRIVACY POLICY FOR LOAN RECOVERY</li>
+                </ul>
+              </div>
+              <div class="col-sm-4 footerDiv footerDiv3  ">
+                 <h1>Subscribe for newsletter</h1>
+                 <input type="email" name="subEmail" placeholder="Enter your email">
+                 <div class="connectWithUs">
+                    <h1>Connect with us </h1>
+                    <ul>
+                      <li><img src="https://canarabank.com/assets/images/facebook.png" alt=""></li>
+                      <li><img src="https://canarabank.com/assets/images/linkedin.png" alt=""></li>
+                      <li><img src="https://canarabank.com/assets/images/twitter.png" alt=""></li>
+                      <li><img src="https://canarabank.com/assets/images/youtube.png" alt=""></li>
+                    </ul>
+                    <ul>
+                      <li><img src="https://canarabank.com/assets/images/pinterst.png" alt=""></li>
+                      <li><img src="https://canarabank.com/assets/images/instagram.png" alt=""></li>
+                      <li><img src="https://canarabank.com/assets/images/download-1807202345.png" alt=""></li>
+                    </ul>
+                 </div>
+              </div>
+          </div>
+      </div>
+  
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
